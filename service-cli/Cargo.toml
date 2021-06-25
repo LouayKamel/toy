@@ -1,0 +1,15 @@
+[package]
+name = "service-cli"
+version = "0.1.0"
+authors = ["LK <lk@overdb.com>"]
+edition = "2018"
+
+[dependencies]
+
+service = {path = "../service"}
+tokio = { version = "1.7", features = [ "full" ] }
+csv-async = {version = "1.2", features = ["tokio", "with_serde"]}
+serde = { version = "1.0", features = [ "derive" ] }
+env_logger = "0.8.4"
+structopt = "0.3.21"
+log = "0.4.14"
